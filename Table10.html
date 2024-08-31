@@ -5,10 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla 10</title>
     <script language="javascript">
-        alert ('Table 10');
+        alert ('Whatsapp');
    </script>
 </head>
+<body>        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5ddd5;
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #075e54;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .message.sent {
+            text-align: right;
+        }
+        .message p {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #dcf8c6;
+            max-width: 70%;
+            word-break: break-word;
+        }
+        .message.sent p {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .footer {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .footer input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+        .footer button {
+            background-color: #075e54;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .footer button:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
 <body>
-    
+    <div class="chat-container">
+        <div class="header">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <h2>Contacto</h2>
+        </div>
+        <div class="messages">
+            <div class="message sent">
+                <p>Hola, ¿cómo estás?</p>
+            </div>
+            <div class="message">
+                <p>¡Hola! Estoy bien, ¿y tú?</p>
+            </div>
+            <!-- Añadir más mensajes aquí -->
+        </div>
+        <div class="footer">
+            <input type="text" placeholder="Escribe un mensaje...">
+            <button>Enviar</button>
+        </div>
+    </div>
 </body>
 </html>
